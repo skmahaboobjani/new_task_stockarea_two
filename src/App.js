@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { createStore } from "redux";
 import { Provider, useSelector, useDispatch } from "react-redux";
@@ -7,150 +5,150 @@ import { BrowserRouter, Routes, Route, Link, useParams, useNavigate } from "reac
 import './App.css';
 
 const Data = [
-  {
-    "name" : "Warehouse-165",
-    "code" : "W-00001",
-    "id" : 1,
-    "city": "Delhi",
-    "space_available": 1234,
-    "type" : "Leasable Space",
-    "cluster" : "cluster-a-32",
-    "is_registered" : true,
-    "is_live" : false
-  },
-  {
-    "name" : "Warehouse-276",
-    "code" : "W-00002",
-    "id" : 2,
-    "city": "Chennai",
-    "space_available": 124,
-    "type" : "Warehouse Service",
-    "cluster" : "cluster-a-1",
-    "is_registered" : true,
-    "is_live" : false
-  },
-  {
-    "name" : "Warehouse-3039",
-    "code" : "W-00003",
-    "id" : 3,
-    "city": "Indore",
-    "space_available": 134,
-    "type" : "Warehouse Service",
-    "cluster" : "cluster-a-1",
-    "is_registered" : true,
-    "is_live" : false
-  },
-  {
-    "name" : "Warehouse-324",
-    "code" : "W-00004",
-    "id" : 4,
-    "city": "Chennai",
-    "space_available": 12,
-    "type" : "Leasable Space",
-    "cluster" : "cluster-a-21",
-    "is_registered" : true,
-    "is_live" : false
-  },
-  {
-    "name" : "Warehouse-5454",
-    "code" : "W-00005",
-    "id" : 5,
-    "city": "Chennai",
-    "space_available": 1243434,
-    "type" : "Warehouse Service",
-    "cluster" : "cluster-a-21",
-    "is_registered" : true,
-    "is_live" : false
-  },
-  {
-    "name" : "Warehouse-4345",
-    "code" : "W-00006",
-    "id" : 6,
-    "city": "Chennai",
-    "space_available": 1,
-    "type" : "Leasable Space",
-    "cluster" : "cluster-a-21",
-    "is_registered" : true,
-    "is_live" : false
-  },
-  {
-    "name" : "Warehouse-3455",
-    "code" : "W-00007",
-    "id" : 7,
-    "city": "Mumbai",
-    "space_available": 4,
-    "type" : "Leasable Space",
-    "cluster" : "cluster-a-2",
-    "is_registered" : true,
-    "is_live" : false
-  },
-  {
-    "name" : "Warehouse-23455",
-    "code" : "W-00008",
-    "id" : 8,
-    "city": "Bangalore",
-    "space_available": 3456,
-    "type" : "Warehouse Service",
-    "cluster" : "cluster-a-21",
-    "is_registered" : true,
-    "is_live" : true
-  },
-  {
-    "name" : "Warehouse-6457",
-    "code" : "W-00009",
-    "id" : 9,
-    "city": "Bangalore",
-    "space_available": 1234545,
-    "type" : "Warehouse Service",
-    "cluster" : "cluster-a-1",
-    "is_registered" : true,
-    "is_live" : false
-  },
-  {
-    "name" : "Warehouse-32456",
-    "code" : "W-000010",
-    "id" : 10,
-    "city": "Guwahati",
-    "space_available": 121234,
-    "type" : "Warehouse Service",
-    "cluster" : "cluster-a-1",
-    "is_registered" : true,
-    "is_live" : true
-  },
-  {
-    "name" : "Warehouse-3245678",
-    "code" : "W-000011",
-    "id" : 11,
-    "city": "Delhi",
-    "space_available": 98,
-    "type" : "Leasable Space",
-    "cluster" : "cluster-v-2",
-    "is_registered" : true,
-    "is_live" : false
-  },
-  {
-    "name" : "Warehouse-4567",
-    "code" : "W-000012",
-    "id" : 12,
-    "city": "Indore",
-    "space_available": 97,
-    "type" : "Warehouse Service",
-    "cluster" : "cluster-a-1",
-    "is_registered" : true,
-    "is_live" : true
-  },
-  {
-    "name" : "Warehouse-458",
-    "code" : "W-000013",
-    "id" : 13,
-    "city": "Delhi",
-    "space_available": 654,
-    "type" : "Leasable Space",
-    "cluster" : "cluster-a-1",
-    "is_registered" : true,
-    "is_live" : false
-  }
-]
+     {
+       "name" : "Warehouse-165",
+       "code" : "W-00001",
+       "id" : 1,
+       "city": "Delhi",
+       "space_available": 1234,
+       "type" : "Leasable Space",
+       "cluster" : "cluster-a-32",
+       "is_registered" : true,
+       "is_live" : false
+     },
+     {
+       "name" : "Warehouse-276",
+       "code" : "W-00002",
+       "id" : 2,
+       "city": "Chennai",
+       "space_available": 124,
+       "type" : "Warehouse Service",
+       "cluster" : "cluster-a-1",
+       "is_registered" : true,
+       "is_live" : false
+     },
+     {
+       "name" : "Warehouse-3039",
+       "code" : "W-00003",
+       "id" : 3,
+       "city": "Indore",
+       "space_available": 134,
+       "type" : "Warehouse Service",
+       "cluster" : "cluster-a-1",
+       "is_registered" : true,
+       "is_live" : false
+     },
+     {
+       "name" : "Warehouse-324",
+       "code" : "W-00004",
+       "id" : 4,
+       "city": "Chennai",
+       "space_available": 12,
+       "type" : "Leasable Space",
+       "cluster" : "cluster-a-21",
+       "is_registered" : true,
+       "is_live" : false
+     },
+     {
+       "name" : "Warehouse-5454",
+       "code" : "W-00005",
+       "id" : 5,
+       "city": "Chennai",
+       "space_available": 1243434,
+       "type" : "Warehouse Service",
+       "cluster" : "cluster-a-21",
+       "is_registered" : true,
+       "is_live" : false
+     },
+     {
+       "name" : "Warehouse-4345",
+       "code" : "W-00006",
+       "id" : 6,
+       "city": "Chennai",
+       "space_available": 1,
+       "type" : "Leasable Space",
+       "cluster" : "cluster-a-21",
+       "is_registered" : true,
+       "is_live" : false
+     },
+     {
+       "name" : "Warehouse-3455",
+       "code" : "W-00007",
+       "id" : 7,
+       "city": "Mumbai",
+       "space_available": 4,
+       "type" : "Leasable Space",
+       "cluster" : "cluster-a-2",
+       "is_registered" : true,
+       "is_live" : false
+     },
+     {
+       "name" : "Warehouse-23455",
+       "code" : "W-00008",
+       "id" : 8,
+       "city": "Bangalore",
+       "space_available": 3456,
+       "type" : "Warehouse Service",
+       "cluster" : "cluster-a-21",
+       "is_registered" : true,
+       "is_live" : true
+     },
+     {
+       "name" : "Warehouse-6457",
+       "code" : "W-00009",
+       "id" : 9,
+       "city": "Bangalore",
+       "space_available": 1234545,
+       "type" : "Warehouse Service",
+       "cluster" : "cluster-a-1",
+       "is_registered" : true,
+       "is_live" : false
+     },
+     {
+       "name" : "Warehouse-32456",
+       "code" : "W-000010",
+       "id" : 10,
+       "city": "Guwahati",
+       "space_available": 121234,
+       "type" : "Warehouse Service",
+       "cluster" : "cluster-a-1",
+       "is_registered" : true,
+       "is_live" : true
+     },
+     {
+       "name" : "Warehouse-3245678",
+       "code" : "W-000011",
+       "id" : 11,
+       "city": "Delhi",
+       "space_available": 98,
+       "type" : "Leasable Space",
+       "cluster" : "cluster-v-2",
+       "is_registered" : true,
+       "is_live" : false
+     },
+     {
+       "name" : "Warehouse-4567",
+       "code" : "W-000012",
+       "id" : 12,
+       "city": "Indore",
+       "space_available": 97,
+       "type" : "Warehouse Service",
+       "cluster" : "cluster-a-1",
+       "is_registered" : true,
+       "is_live" : true
+     },
+     {
+       "name" : "Warehouse-458",
+       "code" : "W-000013",
+       "id" : 13,
+       "city": "Delhi",
+       "space_available": 654,
+       "type" : "Leasable Space",
+       "cluster" : "cluster-a-1",
+       "is_registered" : true,
+       "is_live" : false
+     }
+   ]
 const initialState = {
   warehouses: [...Data],
   filters: {
@@ -174,13 +172,43 @@ const warehouseReducer = (state = initialState, action) => {
 
 const store = createStore(warehouseReducer);
 
+const WarehouseTable = ({ warehouses }) => {
+  return (
+    <table className="warehouse-table">
+      <thead>
+        <tr>
+          <th>Warehouse Name</th>
+          <th>City</th>
+          <th>Space Available</th>
+          <th>Cluster</th>
+        </tr>
+      </thead>
+      <tbody>
+        {warehouses.map((warehouse) => (
+          <tr key={warehouse.id}>
+            <td>
+              <Link to={`/warehouse/${warehouse.id}`}>
+                {warehouse.name}
+              </Link>
+            </td>
+            <td>{warehouse.city}</td>
+            <td>{warehouse.space_available}</td>
+            <td>{warehouse.cluster}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
+
 const WarehouseList = () => {
   const warehouses = useSelector((state) => state.warehouses);
   const filters = useSelector((state) => state.filters);
   const dispatch = useDispatch();
-  const [filteredWarehouses, setFilteredWarehouses] = useState(warehouses); 
+  const [filteredWarehouses, setFilteredWarehouses] = useState(warehouses);
 
-  const applyFilters = () => {
+  const applyFilters = () =>
+   {
     const filteredWarehouses = warehouses.filter((warehouse) => {
       const nameMatch =
         !filters.name || warehouse.name.toLowerCase().includes(filters.name.toLowerCase());
@@ -194,11 +222,16 @@ const WarehouseList = () => {
     });
 
     setFilteredWarehouses(filteredWarehouses);
-    
   };
 
   const handleNameChange = (e) => {
+    const name = e.target.value;
     dispatch({ type: "UPDATE_FILTERS", payload: { ...filters, name: e.target.value } });
+    const filteredWarehouses = warehouses.filter((warehouse) => {
+      return name === "" || warehouse.name.toLowerCase().includes(name.toLowerCase());
+    });
+
+    setFilteredWarehouses(filteredWarehouses);
   };
 
   const handleCityChange = (e) => {
@@ -221,34 +254,32 @@ const WarehouseList = () => {
         placeholder="Search by warehouse name"
         value={filters.name}
         onChange={handleNameChange}
+        className="filter-input"
       />
       <input
         type="text"
         placeholder="Filter by city"
         value={filters.city}
         onChange={handleCityChange}
+        className="filter-input"
       />
       <input
         type="text"
         placeholder="Filter by cluster"
         value={filters.cluster}
         onChange={handleClusterChange}
+        className="filter-input"
       />
       <input
         type="number"
         placeholder="Filter by space available"
         value={filters.spaceAvailable}
         onChange={handleSpaceAvailableChange}
+        className="filter-input"
       />
-      <button onClick={applyFilters}>Apply Filters</button>
+      <button className="filter-input" onClick={applyFilters}>Apply Filters</button>
 
-      <ul>
-        {filteredWarehouses.map((warehouse) => (
-          <li key={warehouse.id}>
-            <Link to={`/warehouse/${warehouse.id}`}>{warehouse.name} - {warehouse.city}</Link>
-          </li>
-        ))}
-      </ul>
+      <WarehouseTable warehouses={filteredWarehouses} />
     </div>
   );
 };
@@ -303,7 +334,7 @@ const WarehouseDetails = () => {
     <div>
       <h1>Warehouse Details</h1>
       {warehouse && (
-        <div>
+        <div className="warehouse-card">
           <h2>
             {editing ? (
               <input
